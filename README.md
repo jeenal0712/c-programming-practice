@@ -1,2 +1,15 @@
-# c-programming-practice
-My C programming practice while learning C.
+# C Programming Practice
+
+This repository contains my C programming practice as I learn the language.
+
+## Topics
+
+- If Else
+- For Loops
+- While Loops
+- Do While Loops
+- Functions
+- Pattern Printing
+- Loop Questions
+
+I will continue updating this repository as I learn new concepts.
