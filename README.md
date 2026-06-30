@@ -7,7 +7,6 @@ This repository contains my C programming practice as I learn the language.
 - If Else
 - For Loops
 - While Loops
-- Do While Loops
 - Functions
 - Pattern Printing
 - Loop Questions
