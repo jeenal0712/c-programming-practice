@@ -1,3 +1,11 @@
+/*for n=5
+output:
+*   *
+ * * 
+  *  
+ * * 
+*   *
+*/
 #include <stdio.h>
 int main(){
     int n;
@@ -23,7 +31,7 @@ int main(){
     }
     else
     {
-        printf("this patter can not br formed");
+        printf("this pattern can not be formed");
     }
     return 0;
 }

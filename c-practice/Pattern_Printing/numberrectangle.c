@@ -1,3 +1,12 @@
+/*
+ for n=5 and d=5
+output:
+12345
+12345
+12345
+12345
+12345
+*/
 #include <stdio.h>
 int main(){
     int n;
@@ -11,7 +20,7 @@ int main(){
         for (int j = 1; j <=d; j++)
         {
             printf("%d",j);
-        }
+        
         printf("\n");
     }
     return 0;

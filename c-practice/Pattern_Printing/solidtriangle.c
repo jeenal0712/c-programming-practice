@@ -1,17 +1,22 @@
+/*for n=5
+output:
+*
+**
+***
+****
+*****
+*/
 #include <stdio.h>
 int main(){
     int n;
     printf("enter the number of lines:");
     scanf("%d",&n);
-    int a=1;
     for (int i = 1; i <=n; i++)
-    {
-        
-        
-        for (int j = 1; j <=i; j++)
+    {   int a=i;
+        while (a!=0)
         {
-            printf("%d ",a);
-            a=a+1;
+            printf("*");
+            a=a-1;
         }
         printf("\n");
     }

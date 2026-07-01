@@ -1,3 +1,11 @@
+/* for n=5
+output:
+    A
+   ABA
+  ABCBA
+ ABCDCBA
+ABCDEDCBA
+*/
 #include <stdio.h>
 int main(){
     int n;
@@ -9,10 +17,18 @@ int main(){
         {
             printf(" ");
         }
-        for ( int j = 65; j <65+2*i; j++)
+        for ( int j = 65; j <65+i; j++)
         {
             char ch=(char)j;
             printf("%c",ch);
+        }
+        if (i>1)
+        {
+            for (int j =65+i-2; j >=65; j--)
+            {
+                char ch1=(char)j;
+                printf("%c",ch1);
+            }
         }
         printf("\n");
     }

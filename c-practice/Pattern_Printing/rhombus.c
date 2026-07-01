@@ -1,5 +1,13 @@
+/*for n=5
+output:
+    *****
+   *****
+  *****
+ *****
+*****
+*/
 #include <stdio.h>
-int main(){
+int main() {
     int n;
     printf("enter the number of lines:");
     scanf("%d",&n);
@@ -9,13 +17,9 @@ int main(){
         {
             printf(" ");
         }
-        for (int j = 1; j<=1; j++)
+        for (int j = 1; j <=n; j++)
         {
-            for (int k = 65; k <=65+i; k++)
-            {
-                char ch=(char)k;
-                printf("%c",ch);
-            }
+            printf("*");
         }
         printf("\n");
     }

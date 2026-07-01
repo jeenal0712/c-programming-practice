@@ -1,3 +1,11 @@
+/* for n=5
+output: 
+0
+10
+010
+1010
+01010
+*/
 #include <stdio.h>
 int main(){
     int n;
