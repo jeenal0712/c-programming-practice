@@ -9,10 +9,11 @@ This repository contains the programs and exercises I completed while learning t
 - If-Else Statements
 - For Loops
 - While Loops
-- Do-While Loops
 - Functions
+- Pointers
 - Pattern Printing
 - Loop-Based Problems
+- Recursion
 
 ## 📂 Repository Structure
 
@@ -21,11 +22,12 @@ c-programming-practice
 │
 ├── for-loop
 ├── while-loop
-├── do-while-loop
-├── functions
+├── functions-and-pointers
 ├── if-else
 ├── pattern-printing
-└── loop-questions
+├── loop-questions
+└── recursion
+
 ```
 
 ## 🎯 Goal
@@ -36,7 +38,6 @@ My goal is to build a strong foundation in C programming by practicing different
 
 - Arrays
 - Strings
-- Pointers
 - Structures
 - File Handling
 - Dynamic Memory Allocation
