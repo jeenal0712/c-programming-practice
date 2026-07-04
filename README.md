@@ -21,14 +21,14 @@ This repository contains the programs and exercises I completed while learning t
 ```
 c-programming-practice
 │
-├── for-loop
-├── while-loop
-├── functions-and-pointers
-├── if-else
-├── pattern-printing
-├── loop-questions
-├── recursion
-└── arrays
+├── Arrays
+├── For_Loop
+├── Function_And_Pointers
+├── If_Else
+├── Pattern_Printing
+├── Questions_Regarding_Loops
+├── Recursion
+└── While_Loop
 
 ```
 
