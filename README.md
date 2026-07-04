@@ -14,6 +14,7 @@ This repository contains the programs and exercises I completed while learning t
 - Pattern Printing
 - Loop-Based Problems
 - Recursion
+- Arrays
 
 ## 📂 Repository Structure
 
@@ -26,7 +27,8 @@ c-programming-practice
 ├── if-else
 ├── pattern-printing
 ├── loop-questions
-└── recursion
+├── recursion
+└── arrays
 
 ```
 
@@ -36,7 +38,6 @@ My goal is to build a strong foundation in C programming by practicing different
 
 ## 🚀 Future Topics
 
-- Arrays
 - Strings
 - Structures
 - File Handling
