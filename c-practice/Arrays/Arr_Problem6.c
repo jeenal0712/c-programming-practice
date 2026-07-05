@@ -13,7 +13,7 @@ int secondmax(int arr[],int n){
             d=c;
             c=arr[i];
         }
-        else if (d<arr[i])
+        else if (d<arr[i] && c!=arr[i]) //If maximum number is at 0 index or maximum number is repeated.
         {
             d=arr[i];
         }
