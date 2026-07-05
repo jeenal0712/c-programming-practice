@@ -1,5 +1,5 @@
 #include <stdio.h>
-int max(int n){
+int min(int n){
     int arr[n];
 
     for (int i = 0; i <n; i++)
@@ -12,7 +12,7 @@ int max(int n){
 
     for (int i = 0; i <n; i++)
     {
-        if (arr[i]>c)
+        if (arr[i]<c)
         {
             c=arr[i];
         }   
@@ -25,9 +25,9 @@ int main(){
     printf("enter the number of elements you want in array:");
     scanf("%d",&n);
 
-    int sol=max(n);
+    int sol=min(n);
 
-    printf("The maximum element of the array is: %d",sol);
+    printf("The minimum element of the array is: %d",sol);
 
     return 0;
 }
