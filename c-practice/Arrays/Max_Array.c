@@ -8,7 +8,7 @@ int max(int n){
         scanf("%d",&arr[i]);
     }
 
-    int c=0;
+    int c=arr[0];
 
     for (int i = 0; i <n; i++)
     {
