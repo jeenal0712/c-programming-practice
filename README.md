@@ -15,6 +15,7 @@ This repository contains the programs and exercises I completed while learning t
 - Loop-Based Problems
 - Recursion
 - Arrays
+- 2D Arrays
 
 ## 📂 Repository Structure
 
