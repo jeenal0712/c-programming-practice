@@ -1,42 +1,42 @@
-//find the second largest element in an array.
+//Reverse an array without using the extra array.
 #include <stdio.h>
-#include <limits.h>
-int secondmax(int arr[],int n){
-
-    int c=INT_MIN;
-    int d=INT_MIN;
-
-    for (int i = 0; i <n; i++)
-    {
-        if (arr[i]>c)
-        {
-            d=c;
-            c=arr[i];
-        }
-        else if (d<arr[i] && c!=arr[i]) //If maximum number is at 0 index or maximum number is repeated.
-        {
-            d=arr[i];
-        }
-    }
-
-    return d;
-}
-int main(){
-    int n;
-    printf("enter the number of elements you want in array:");
-    scanf("%d",&n);
-
+void reverse(int n){
     int arr[n];
-
     for (int i = 0; i <n; i++)
     {
         printf("Enter the element %d:",i+1);
         scanf("%d",&arr[i]);
     }
 
-    int sol=secondmax(arr,n);
+    printf("The original array is:");
+    for (int i = 0; i <n; i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    printf("\n");
 
-    printf("The second largest element of the array is: %d",sol);
-
+    int i=0;
+    int j=n-1;
+    while (i<j)
+    {
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+        i++;
+        j--;
+    }
+    
+    printf("The reversed array is:");
+    for (int k = 0; k <n; k++)
+    {
+        printf("%d ",arr[k]);
+    }
+    printf("\n");
+}
+int main(){
+    int n;
+    printf("Enter the number of elements you want in array:");
+    scanf("%d",&n);
+    reverse(n);
     return 0;
 }

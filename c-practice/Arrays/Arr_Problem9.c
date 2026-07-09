@@ -1,18 +1,28 @@
-//WAP to find a duplicate element from a given array of intgers.
+//Find the unique number in a given array where all the elements are being repeated twice with one value being unique.
 #include <stdio.h>
+#include <stdbool.h>
 int main()
 {
-    int arr[7] = {1, 2, 5, 4, 5, 6, 7};
+    int arr[] = {1, 3, 6, 1, 2, 3, 2};
+    int n = sizeof(arr) / sizeof(arr[0]);
 
-    for (int i = 0; i <= 6; i++)
+    for (int i = 0; i < n; i++)
     {
-        for (int j = i + 1; j <= 6; j++)
+        bool unique = true;
+
+        for (int j = 0; j < n; j++)
         {
-            if (arr[i] == arr[j])
+            if (i != j && arr[i] == arr[j])
             {
-                printf("%d is the duplicate element", arr[i]);
+                unique = false;
                 break;
             }
+        }
+
+        if (unique)
+        {
+            printf("The unique element is %d", arr[i]);
+            break;
         }
     }
 

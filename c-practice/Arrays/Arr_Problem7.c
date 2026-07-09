@@ -1,6 +1,26 @@
-//Reverse an array without using the extra array.
+//check if the array is palindrome or not.
 #include <stdio.h>
-void reverse(int n){
+void palindrome(int arr[],int n){
+    int i=0;
+    int j=n-1;
+
+    while(i<j){
+        if (arr[i]!=arr[j])
+        {
+           printf("this is not a palindrom.");
+           return;
+        }
+        i++;
+        j--;
+    }
+
+    printf("this is a palindrome.");
+}
+int main(){
+    int n;
+    printf("Enter the number of elements you want in array:");
+    scanf("%d",&n);
+
     int arr[n];
     for (int i = 0; i <n; i++)
     {
@@ -8,35 +28,7 @@ void reverse(int n){
         scanf("%d",&arr[i]);
     }
 
-    printf("The original array is:");
-    for (int i = 0; i <n; i++)
-    {
-        printf("%d ",arr[i]);
-    }
-    printf("\n");
-
-    int i=0;
-    int j=n-1;
-    while (i<j)
-    {
-        int temp=arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
-        i++;
-        j--;
-    }
+    palindrome(arr,n);
     
-    printf("The reversed array is:");
-    for (int k = 0; k <n; k++)
-    {
-        printf("%d ",arr[k]);
-    }
-    printf("\n");
-}
-int main(){
-    int n;
-    printf("Enter the number of elements you want in array:");
-    scanf("%d",&n);
-    reverse(n);
     return 0;
 }

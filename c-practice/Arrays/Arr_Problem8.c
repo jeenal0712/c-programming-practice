@@ -1,34 +1,20 @@
-//check if the array is palindrome or not.
+//WAP to find a duplicate element from a given array of intgers.
 #include <stdio.h>
-void palindrome(int arr[],int n){
-    int i=0;
-    int j=n-1;
+int main()
+{
+    int arr[7] = {1, 2, 5, 4, 5, 6, 7};
 
-    while(i<j){
-        if (arr[i]!=arr[j])
-        {
-           printf("this is not a palindrom.");
-           return;
-        }
-        i++;
-        j--;
-    }
-
-    printf("this is a palindrome.");
-}
-int main(){
-    int n;
-    printf("Enter the number of elements you want in array:");
-    scanf("%d",&n);
-
-    int arr[n];
-    for (int i = 0; i <n; i++)
+    for (int i = 0; i <= 6; i++)
     {
-        printf("Enter the element %d:",i+1);
-        scanf("%d",&arr[i]);
+        for (int j = i + 1; j <= 6; j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                printf("%d is the duplicate element", arr[i]);
+                break;
+            }
+        }
     }
 
-    palindrome(arr,n);
-    
     return 0;
 }
