@@ -23,6 +23,10 @@ int main(){
 
     int max=INT_MIN;
     int min=INT_MAX;
+    int imi=0;
+    int imj=0;
+    int ini=0;
+    int inj=0;
     for (int i = 0; i <r; i++)
     {
         for (int j = 0; j <c; j++)
@@ -30,16 +34,20 @@ int main(){
             if (max<m[i][j])
             {
                 max=m[i][j];
+                imi=i;
+                imj=j;
             }
             if (min>m[i][j])
             {
                 min=m[i][j];
+                ini=i;
+                inj=j;
             }
         }
     }
 
-    printf("The maximum element is:%d\n",max);
-    printf("The minimum element is:%d",min);
+    printf("The maximum element is:%d and index is:[%d][%d]\n",max,imi,imj);
+    printf("The minimum element is:%d and index is:[%d][%d]",min,ini,inj);
 
     return 0;
 }
