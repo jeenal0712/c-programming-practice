@@ -31,13 +31,14 @@ int main(){
     }
 
     printf("Transposed Matrix:\n");
-    int t[m][n];
     for (int i = 0; i <m; i++)
     {
         for (int j = 0; j <n; j++)
         {
-            t[i][j]=a[j][i];
-            printf("%d ",t[i][j]);
+            int temp=a[j][i];
+            a[j][i]=a[i][j];
+            a[i][j]=a[j][i];
+            printf("%d ",a[i][j]);
         }
         printf("\n");
     }
