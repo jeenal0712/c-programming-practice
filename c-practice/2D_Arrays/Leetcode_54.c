@@ -23,7 +23,6 @@ int main(){
     int maxr=r-1;
     int minc=0;
     int maxc=c-1;
-    int m=0;
     int e=c*r;
     int count=0;
 
