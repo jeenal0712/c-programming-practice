@@ -16,6 +16,7 @@ This repository contains the programs and exercises I completed while learning t
 - Recursion
 - Arrays
 - 2D Arrays
+- Strings
 
 ## 📂 Repository Structure
 
@@ -29,6 +30,7 @@ c-programming-practice
 ├── Pattern_Printing
 ├── Questions_Regarding_Loops
 ├── Recursion
+├── Strings
 └── While_Loop
 
 ```
@@ -39,7 +41,6 @@ My goal is to build a strong foundation in C programming by practicing different
 
 ## 🚀 Future Topics
 
-- Strings
 - Structures
 - File Handling
 - Dynamic Memory Allocation
