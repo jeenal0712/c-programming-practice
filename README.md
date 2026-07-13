@@ -22,20 +22,40 @@ This repository contains the programs and exercises I completed while learning t
 ## 📂 Repository Structure
 
 ```
+
 c-programming-practice
 │
-└── c-practice
+└── C-Practice
     │
-    ├── Arrays
-    ├── For_Loop
-    ├── Function_And_Pointers
-    ├── If_Else
-    ├── Pattern_Printing
-    ├── Questions_Regarding_Loops
-    ├── Recursion
-    ├── Strings
-    ├── Structures
-    └── While_Loop
+    ├── 📁 Arrays
+    │   └── 1D Arrays, 2D Arrays, Matrix Problems
+    │
+    ├── 📁 For_Loop
+    │   └── Basic to Advanced Loop Programs
+    │
+    ├── 📁 Function_And_Pointers
+    │   └── Functions, Recursion, Pointers
+    │
+    ├── 📁 If_Else
+    │   └── Conditional Statement Programs
+    │
+    ├── 📁 Pattern_Printing
+    │   └── Star, Number & Character Patterns
+    │
+    ├── 📁 Questions_Regarding_Loops
+    │   └── Logic Building Problems
+    │
+    ├── 📁 Recursion
+    │   └── Recursive Programming Problems
+    │
+    ├── 📁 Strings
+    │   └── String Manipulation Programs
+    │
+    ├── 📁 Structures
+    │   └── Structure Programs and Examples
+    │
+    └── 📁 While_Loop
+        └── While Loop Practice Programs
 
 ```
 
