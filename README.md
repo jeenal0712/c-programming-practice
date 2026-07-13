@@ -70,6 +70,12 @@ My goal is to build a strong foundation in C programming by practicing different
 - Searching Algorithms
 - Sorting Algorithms
 
+## 📊 Repository Stats
+
+![GitHub last commit](https://img.shields.io/github/last-commit/jeenal0712/c-programming-practice)
+![GitHub repo size](https://img.shields.io/github/repo-size/jeenal0712/c-programming-practice)
+![GitHub stars](https://img.shields.io/github/stars/jeenal0712/c-programming-practice?style=social)
+
 ## 🛠️ Language
 
 - C
