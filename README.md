@@ -18,6 +18,7 @@ This repository contains the programs and exercises I completed while learning t
 - 2D Arrays
 - Strings
 - Structures
+- Sorting Algorithms
 
 ## 📂 Repository Structure
 
@@ -68,7 +69,6 @@ My goal is to build a strong foundation in C programming by practicing different
 - File Handling
 - Dynamic Memory Allocation
 - Searching Algorithms
-- Sorting Algorithms
 
 ## 🛠️ Language
 
