@@ -26,16 +26,19 @@ This repository contains the programs and exercises I completed while learning t
 
 c-programming-practice
 │
-└── C-Practice
+└── c-practice
+    │
+    ├── 📁 2D_Arrays
+    │   └── Matrix & 2D Array Problems
     │
     ├── 📁 Arrays
-    │   └── 1D Arrays, 2D Arrays, Matrix Problems
+    │   └── 1D Array Programs
     │
     ├── 📁 For_Loop
     │   └── Basic to Advanced Loop Programs
     │
     ├── 📁 Function_And_Pointers
-    │   └── Functions, Recursion, Pointers
+    │   └── Functions and Pointer Programs
     │
     ├── 📁 If_Else
     │   └── Conditional Statement Programs
@@ -49,11 +52,14 @@ c-programming-practice
     ├── 📁 Recursion
     │   └── Recursive Programming Problems
     │
+    ├── 📁 Sorting_Algorithms
+    │   └── Bubble, Selection, Insertion, Merge, Quick Sort, etc.
+    │
     ├── 📁 Strings
     │   └── String Manipulation Programs
     │
     ├── 📁 Structures
-    │   └── Structure Programs and Examples
+    │   └── Structure and Union Programs
     │
     └── 📁 While_Loop
         └── While Loop Practice Programs
