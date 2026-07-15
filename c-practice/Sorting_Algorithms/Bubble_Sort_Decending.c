@@ -1,4 +1,4 @@
-//using bubble sort sort the array in decending order.
+//using bubble sort to sort the array in decending order.
 #include <stdio.h>
 int main(){
     int n;
