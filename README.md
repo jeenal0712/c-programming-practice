@@ -53,7 +53,7 @@ c-programming-practice
     │   └── Recursive Programming Problems
     │
     ├── 📁 Sorting_Algorithms
-    │   └── Bubble, Selection, Insertion, Merge, Quick Sort, etc.
+    │   └── Bubble, Selection, Insertion Sort
     │
     ├── 📁 Strings
     │   └── String Manipulation Programs
