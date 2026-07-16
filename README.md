@@ -37,6 +37,9 @@ c-programming-practice
     ├── 📁 Arrays
     │   └── 1D Array Programs
     │
+    ├── 📁 Dynamic_Memory_Allocation
+    │   └── malloc(), calloc(), realloc() & free() Programs
+    │
     ├── 📁 For_Loop
     │   └── Basic to Advanced Loop Programs
     │
