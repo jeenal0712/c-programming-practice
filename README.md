@@ -7,6 +7,7 @@ This repository contains the programs and exercises I completed while learning t
 ## 📚 Topics Covered
 
 - If-Else Statements
+- Switch Case
 - For Loops
 - While Loops
 - Functions
@@ -19,6 +20,8 @@ This repository contains the programs and exercises I completed while learning t
 - Strings
 - Structures
 - Sorting Algorithms
+- File Handling
+- Dynamic Memory Allocation
 
 ## 📂 Repository Structure
 
@@ -61,6 +64,9 @@ c-programming-practice
     ├── 📁 Structures
     │   └── Structure and Union Programs
     │
+    ├── 📁 Switch_Case
+    │   └── Menu-Driven & Switch Case Programs
+    │
     └── 📁 While_Loop
         └── While Loop Practice Programs
 
@@ -69,12 +75,6 @@ c-programming-practice
 ## 🎯 Goal
 
 My goal is to build a strong foundation in C programming by practicing different concepts and solving programming problems.
-
-## 🚀 Future Topics
-
-- File Handling
-- Dynamic Memory Allocation
-- Searching Algorithms
 
 ## 🛠️ Language
 
