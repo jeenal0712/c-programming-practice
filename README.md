@@ -2,26 +2,34 @@
 
 Welcome to my C Programming Practice repository!
 
-This repository contains the programs and exercises I completed while learning the C programming language. It is organized by topic and will continue to grow as I learn new concepts.
+This repository contains the programs and exercises I have completed while learning the C programming language. It is organized by topic, with additional programs added occasionally.
+
+## 🎯 Goal
+
+My goal is to build a strong foundation in C programming by practicing different concepts and solving programming problems.
+
+## 📊 Stats
+- 15 topics covered
+- 100+ programs written
+- Actively maintained
 
 ## 📚 Topics Covered
 
-- If-Else Statements
-- Switch Case
-- For Loops
-- While Loops
-- Functions
-- Pointers
-- Pattern Printing
-- Loop-Based Problems
-- Recursion
-- Arrays
-- 2D Arrays
-- Strings
-- Structures
-- Sorting Algorithms
-- File Handling
-- Dynamic Memory Allocation
+- [If-Else Statements](./c-practice/If_Else)
+- [Switch Case](./c-practice/Switch_Case)
+- [For Loops](./c-practice/For_Loop)
+- [While Loops](./c-practice/While_Loop)
+- [Functions](./c-practice/Function_And_Pointers)
+- [Pointers](./c-practice/Function_And_Pointers)
+- [Pattern Printing](./c-practice/Pattern_Printing)
+- [Loop-Based Problems](./c-practice/Questions_Regarding_Loops)
+- [Recursion](./c-practice/Recursion)
+- [Arrays](./c-practice/Arrays)
+- [2D Arrays](./c-practice/2D_Arrays)
+- [Strings](./c-practice/Strings)
+- [Structures](./c-practice/Structures)
+- [Sorting Algorithms](./c-practice/Sorting_Algorithms)
+- [Dynamic Memory Allocation](./c-practice/Dynamic_Memory_Allocation)
 
 ## 📂 Repository Structure
 
@@ -36,6 +44,9 @@ c-programming-practice
     │
     ├── 📁 Arrays
     │   └── 1D Array Programs
+    │
+    ├── 📁 Dynamic_Memory_Allocation
+    │   └── malloc(), calloc(), realloc() & free() Programs
     │
     ├── 📁 For_Loop
     │   └── Basic to Advanced Loop Programs
@@ -72,9 +83,11 @@ c-programming-practice
 
 ```
 
-## 🎯 Goal
-
-My goal is to build a strong foundation in C programming by practicing different concepts and solving programming problems.
+## ⚙️ How to Compile & Run
+```bash
+gcc filename.c -o output
+./output
+```
 
 ## 🛠️ Language
 
