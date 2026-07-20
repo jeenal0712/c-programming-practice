@@ -9,7 +9,7 @@ This repository contains the programs and exercises I have completed while learn
 My goal is to build a strong foundation in C programming by practicing different concepts and solving programming problems.
 
 ## 📊 Stats
-- 15 topics covered
+- 14 topics covered
 - 100+ programs written
 - Actively maintained
 
@@ -19,8 +19,7 @@ My goal is to build a strong foundation in C programming by practicing different
 - [Switch Case](./c-practice/Switch_Case)
 - [For Loops](./c-practice/For_Loop)
 - [While Loops](./c-practice/While_Loop)
-- [Functions](./c-practice/Function_And_Pointers)
-- [Pointers](./c-practice/Function_And_Pointers)
+- [Functions and Pointers](./c-practice/Function_And_Pointers)
 - [Pattern Printing](./c-practice/Pattern_Printing)
 - [Loop-Based Problems](./c-practice/Questions_Regarding_Loops)
 - [Recursion](./c-practice/Recursion)
