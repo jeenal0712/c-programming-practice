@@ -37,6 +37,7 @@ Student-Management-System/
 │
 ├── student_management.c
 └── README.md
+└── students.dat   ← generated automatically (not uploaded)
 
 ```
 
@@ -45,7 +46,7 @@ Student-Management-System/
 ### 1. Compile the Program
 
 ```bash
-gcc student_management.c -o student_management
+gcc Student_Management.c -o Student_Management
 ```
 
 ### 2. Run the Program
@@ -54,7 +55,7 @@ gcc student_management.c -o student_management
 
 ```bash
 
-student_management.exe
+Student_Management.exe
 
 ```
 
@@ -62,7 +63,7 @@ student_management.exe
 
 ```bash
 
-./student_management
+./Student_Management
 
 ```
 
@@ -70,7 +71,7 @@ student_management.exe
 
 Student records are stored in a binary file using file handling functions such as `fread()` and `fwrite()`.
 
-The binary file is generated automatically when the program runs and is not included in the repository.
+The binary file (`students.dat`) is generated automatically when the program runs and is not included in the repository.
 
 ## 🧠 What I Learned
 
@@ -83,3 +84,9 @@ The binary file is generated automatically when the program runs and is not incl
 ---
 
 ⭐ A C programming project created as part of my learning journey.
+
+## 👨‍💻 Author
+
+**Jeenal**
+
+This project was created as part of my journey to learn and practice C programming.
