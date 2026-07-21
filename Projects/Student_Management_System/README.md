@@ -36,3 +36,40 @@ Student-Management-System/
 │
 ├── student_management.c
 └── README.md
+
+## ▶️ How to Run
+
+### 1. Compile the Program
+
+```bash
+gcc student_management.c -o student_management
+
+### 2. Run the Program
+
+#### Windows
+
+```bash
+student_management.exe
+
+#### Linux / macOS
+
+```bash
+./student_management
+
+## 💾 Data Storage
+
+Student records are stored in a binary file using file handling functions such as `fread()` and `fwrite()`.
+
+The binary file is generated automatically when the program runs and is not included in the repository.
+
+## 🧠 What I Learned
+
+- Working with structures
+- Using binary file handling
+- Implementing CRUD operations
+- Searching and sorting records
+- Building a menu-driven C program
+
+---
+
+⭐ A C programming project created as part of my learning journey.
