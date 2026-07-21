@@ -46,6 +46,7 @@ Student-Management-System/
 
 ```bash
 gcc student_management.c -o student_management
+```
 
 ### 2. Run the Program
 
