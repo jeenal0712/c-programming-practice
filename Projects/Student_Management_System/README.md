@@ -35,7 +35,7 @@ This project allows users to manage student records using structures, functions,
 
 Student-Management-System/
 │
-├── student_management.c
+├── Student_Management.c
 └── README.md
 └── students.dat   ← generated automatically (not uploaded)
 
