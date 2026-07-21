@@ -53,12 +53,18 @@ gcc student_management.c -o student_management
 #### Windows
 
 ```bash
+
 student_management.exe
+
+```
 
 #### Linux / macOS
 
 ```bash
+
 ./student_management
+
+```
 
 ## 💾 Data Storage
 
