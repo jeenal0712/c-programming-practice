@@ -32,10 +32,13 @@ This project allows users to manage student records using structures, functions,
 ## 📂 Project Structure
 
 ```text
+
 Student-Management-System/
 │
 ├── student_management.c
 └── README.md
+
+```
 
 ## ▶️ How to Run
 
