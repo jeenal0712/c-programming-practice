@@ -113,6 +113,7 @@ float modulus(float a,float b){
     if (b == 0) 
     {
         printf("Modulus by zero is not valid!");
+        return 0;
     }
     return fmod(a, b);
 }
