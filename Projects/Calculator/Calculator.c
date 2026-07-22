@@ -5,6 +5,7 @@ float subtract(float a,float b);
 float multiply(float a,float b);
 float divide(float a,float b);
 float modulus(float a,float b);
+float power(float a, float b);
 int main(){
     int choice;
     while(1)
@@ -15,7 +16,8 @@ int main(){
         printf("3. Multiplication\n");
         printf("4. Division\n");
         printf("5. Modulus\n");
-        printf("6. Exit\n");
+        printf("6. Power\n");
+        printf("7. Exit\n");
 
         printf("Enter your choice:");
         scanf("%d",&choice);
@@ -23,12 +25,12 @@ int main(){
         float o1;
         float o2;
 
-        if (choice == 6) 
+        if (choice == 7) 
         {
             return 0;
         }
 
-        if (choice < 1 || choice > 6) 
+        if (choice < 1 || choice > 7) 
         {
             printf("Invalid choice!\n");
             continue;
@@ -58,10 +60,14 @@ int main(){
             break;
         
         case 5:
-            printf("The solution is: %.2f", modulus(o1, o2));
+            printf("The solution is: %.2f", modulus(o1,o2));
             break;
     
         case 6:
+            printf("The solution is: %.2f", power(o1,o2));
+            break;
+
+        case 7:
             return 0;
 
         default:
@@ -94,4 +100,7 @@ float modulus(float a,float b){
         printf("Modulus by zero is not valid!");
     }
     return fmod(a, b);
+}
+float power(float a, float b){
+    return pow(a,b);
 }
