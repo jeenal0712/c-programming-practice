@@ -6,6 +6,7 @@ float multiply(float a,float b);
 float divide(float a,float b);
 float modulus(float a,float b);
 float power(float a, float b);
+float squareroot(float a);
 int main(){
     int choice;
     while(1)
@@ -17,7 +18,8 @@ int main(){
         printf("4. Division\n");
         printf("5. Modulus\n");
         printf("6. Power\n");
-        printf("7. Exit\n");
+        printf("7. Square Root\n");
+        printf("8. Exit\n");
 
         printf("Enter your choice:");
         scanf("%d",&choice);
@@ -25,22 +27,31 @@ int main(){
         float o1;
         float o2;
 
-        if (choice == 7) 
+        if (choice == 8) 
         {
             return 0;
         }
 
-        if (choice < 1 || choice > 7) 
+        if (choice < 1 || choice > 8) 
         {
             printf("Invalid choice!\n");
             continue;
         }
 
-        printf("Enter the first operand:");
-        scanf("%f",&o1);
-        printf("Enter the second operand:");
-        scanf("%f",&o2);
+        if (choice!=7)
+        {
+            printf("Enter the first operand:");
+            scanf("%f",&o1);
+            printf("Enter the second operand:");
+            scanf("%f",&o2);
+        }
 
+        if (choice==7)
+        {
+            printf("Enter the operand:");
+            scanf("%f",&o1);
+        }
+        
         switch (choice)
         {
         case 1:
@@ -68,6 +79,10 @@ int main(){
             break;
 
         case 7:
+            printf("The solution is: %.2f",squareroot(o1));
+            break;
+
+        case 8:
             return 0;
 
         default:
@@ -103,4 +118,7 @@ float modulus(float a,float b){
 }
 float power(float a, float b){
     return pow(a,b);
+}
+float squareroot(float a){
+    return sqrt(a);
 }
