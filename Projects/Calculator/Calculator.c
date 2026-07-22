@@ -104,7 +104,7 @@ float multiply(float a,float b){
 float divide(float a,float b){
     if (b==0)
     {
-        printf("Division by 0 not valid!");
+        printf("Division by 0 not valid!\n");
         return 0;
     }
     return a/b;
@@ -112,7 +112,7 @@ float divide(float a,float b){
 float modulus(float a,float b){
     if (b == 0) 
     {
-        printf("Modulus by zero is not valid!");
+        printf("Modulus by zero is not valid!\n");
         return 0;
     }
     return fmod(a, b);
@@ -121,5 +121,10 @@ float power(float a, float b){
     return pow(a,b);
 }
 float squareroot(float a){
+    if (a<0)
+    {
+        printf("Square root of a negative number is invalid!\n");
+        return 0;
+    }
     return sqrt(a);
 }
