@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <math.h>
 float add(float a,float b);
 float subtract(float a,float b);
 float multiply(float a,float b);
 float divide(float a,float b);
+float modulus(float a,float b);
 int main(){
     int choice;
     while(1)
@@ -12,7 +14,8 @@ int main(){
         printf("2. Subtraction\n");
         printf("3. Multiplication\n");
         printf("4. Division\n");
-        printf("5. Exit\n");
+        printf("5. Modulus\n");
+        printf("6. Exit\n");
 
         printf("Enter your choice:");
         scanf("%d",&choice);
@@ -20,12 +23,12 @@ int main(){
         float o1;
         float o2;
 
-        if (choice == 5) 
+        if (choice == 6) 
         {
             return 0;
         }
 
-        if (choice < 1 || choice > 5) 
+        if (choice < 1 || choice > 6) 
         {
             printf("Invalid choice!\n");
             continue;
@@ -55,8 +58,12 @@ int main(){
             break;
         
         case 5:
-            return 0;
+            printf("The solution is: %.2f", modulus(o1, o2));
+            break;
     
+        case 6:
+            return 0;
+
         default:
             printf("Invalid choice!");
         }
@@ -80,4 +87,11 @@ float divide(float a,float b){
         return 0;
     }
     return a/b;
+}
+float modulus(float a,float b){
+    if (b == 0) 
+    {
+        printf("Modulus by zero is not valid!");
+    }
+    return fmod(a, b);
 }
