@@ -150,6 +150,12 @@ float factorial(float a){
         return 0;
     }
 
+    if (a != (int)a) 
+    {
+        printf("Factorial is only valid for whole numbers!\n");
+        return 0;
+    }
+    
     float sol=1;
 
     for (float i = 1; i <=a; i++)
