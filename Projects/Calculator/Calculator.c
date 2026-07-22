@@ -9,6 +9,8 @@ float power(float a, float b);
 float squareroot(float a);
 float absolute(float a);
 float factorial(float a);
+int gcd(int a, int b);
+int lcm(int a, int b);
 int main(){
     int choice;
     while(1)
@@ -23,26 +25,30 @@ int main(){
         printf("7. Square Root\n");
         printf("8. Absolute Value\n");
         printf("9. Factorial\n");
-        printf("10. Exit\n");
+        printf("10. GCD\n");
+        printf("11. LCM\n");
+        printf("12. Exit\n");
 
         printf("Enter your choice:");
         scanf("%d",&choice);
 
         float o1;
         float o2;
+        int o3;
+        int o4;
 
-        if (choice == 10) 
+        if (choice == 12) 
         {
             return 0;
         }
 
-        if (choice < 1 || choice > 10) 
+        if (choice < 1 || choice > 12) 
         {
             printf("Invalid choice!\n");
             continue;
         }
 
-        if (choice!=7 && choice!=8 && choice!=9)
+        if (choice!=7 && choice!=8 && choice!=9 && choice!=10 && choice!=11)
         {
             printf("Enter the first operand:");
             scanf("%f",&o1);
@@ -54,6 +60,14 @@ int main(){
         {
             printf("Enter the operand:");
             scanf("%f",&o1);
+        }
+        
+        if (choice==10 || choice==11)
+        {
+            printf("Enter the first operand:");
+            scanf("%d",&o3);
+            printf("Enter the second operand:");
+            scanf("%d",&o4);
         }
         
         switch (choice)
@@ -95,7 +109,12 @@ int main(){
             break;
 
         case 10:
-            return 0;
+            printf("The soulution is: %d",gcd(o3,o4));
+            break;
+
+        case 11:
+            printf("The solution is: %d",lcm(o3,o4));
+            break;
 
         default:
             printf("Invalid choice!");
@@ -155,7 +174,7 @@ float factorial(float a){
         printf("Factorial is only valid for whole numbers!\n");
         return 0;
     }
-    
+
     float sol=1;
 
     for (float i = 1; i <=a; i++)
@@ -164,4 +183,16 @@ float factorial(float a){
     }
 
     return sol;
+}
+int gcd(int a, int b){
+    while (b != 0) 
+    {
+        int remainder = a % b;
+        a = b;
+        b = remainder;
+    }
+    return a;
+}
+int lcm(int a, int b) {
+    return (a * b) / gcd(a, b);
 }
