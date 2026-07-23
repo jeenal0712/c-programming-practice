@@ -15,6 +15,13 @@ int lcm(int a, int b);
 float sine(float a);
 float cosine(float a);
 float tangent(float a);
+float logarithm(float a);
+float logarithm10(float a);
+void saveHistory(char operation[], float a, float b, float result);
+void saveSingleHistory(char operation[], float a, float result);
+void saveIntegerHistory(char operation[], int a, int b, int result);
+void displayHistory();
+void clearHistory();
 int main(){
     int choice;
     while(1)
@@ -34,7 +41,11 @@ int main(){
         printf("12. Sin()\n");
         printf("13. Cos()\n");
         printf("14. Tan()\n");
-        printf("15. Exit\n");
+        printf("15. Natural Log (ln)\n");
+        printf("16. Log Base 10\n");
+        printf("17. Display History\n");
+        printf("18. Clear History\n");
+        printf("19. Exit\n");
 
         printf("Enter your choice:");
         scanf("%d",&choice);
@@ -43,19 +54,21 @@ int main(){
         float o2;
         int o3;
         int o4;
+        float result;
+        int iresult;
 
-        if (choice == 15) 
+        if (choice == 19) 
         {
             return 0;
         }
 
-        if (choice < 1 || choice > 15) 
+        if (choice < 1 || choice > 19) 
         {
             printf("Invalid choice!\n");
             continue;
         }
 
-        if (choice!=7 && choice!=8 && choice!=9 && choice!=10 && choice!=11 && choice!=12 && choice!=13 && choice!=14)
+        if (choice!=7 && choice!=8 && choice!=9 && choice!=10 && choice!=11 && choice!=12 && choice!=13 && choice!=14 && choice!=15 && choice!=16 && choice!=17 && choice!=18)
         {
             printf("Enter the first operand:");
             scanf("%f",&o1);
@@ -63,7 +76,7 @@ int main(){
             scanf("%f",&o2);
         }
 
-        if (choice==7 || choice==8 || choice==9 || choice==12 || choice==13 || choice==14)
+        if (choice==7 || choice==8 || choice==9 || choice==12 || choice==13 || choice==14 || choice==15 || choice==16)
         {
             printf("Enter the operand:");
             scanf("%f",&o1);
@@ -80,60 +93,111 @@ int main(){
         switch (choice)
         {
         case 1:
-            printf("The solution is:%.2f",add(o1,o2));
+            result=add(o1,o2);
+            printf("The solution is:%.2f",result);
+            saveHistory("+", o1, o2, result);
             break;
         
         case 2:
-            printf("The solution is:%.2f",subtract(o1,o2));
+            result=subtract(o1,o2);
+            printf("The solution is:%.2f",result);
+            saveHistory("-", o1, o2, result);
             break;
 
         case 3:
-            printf("The solution is:%.2f",multiply(o1,o2));
+            result= multiply(o1,o2);
+            printf("The solution is:%.2f",result);
+            saveHistory("*", o1, o2, result);
             break;
 
         case 4:
-            printf("The solution is:%.2f",divide(o1,o2));
+            result= divide(o1,o2);
+            printf("The solution is:%.2f",result);
+            saveHistory("/", o1, o2, result);
             break;
         
         case 5:
-            printf("The solution is: %.2f", modulus(o1,o2));
+            result= modulus(o1,o2);
+            printf("The solution is: %.2f", result);
+            saveHistory("%", o1, o2, result);
             break;
     
         case 6:
-            printf("The solution is: %.2f", power(o1,o2));
+            result= power(o1,o2);
+            printf("The solution is: %.2f",result);
+            saveHistory("^", o1, o2, result);
             break;
 
         case 7:
-            printf("The solution is: %.2f",squareroot(o1));
+            result= squareroot(o1);
+            printf("The solution is: %.2f",result);
+            saveSingleHistory("sqrt", o1, result);
             break;
 
         case 8:
-            printf("The solution is: %.2f",absolute(o1));
+            result= absolute(o1);
+            printf("The solution is: %.2f",result);
+            saveSingleHistory("abs", o1, result);
             break;
 
         case 9:
-            printf("The solution is: %.2f",factorial(o1));
+            result= factorial(o1);
+            printf("The solution is: %.2f",result);
+            saveSingleHistory("!", o1, result);
             break;
 
         case 10:
-            printf("The soulution is: %d",gcd(o3,o4));
+            iresult=gcd(o3,o4);
+            printf("The solution is: %d",iresult);
+            saveIntegerHistory("GCD", o3, o4,iresult);
             break;
 
         case 11:
-            printf("The solution is: %d",lcm(o3,o4));
+            iresult=lcm(o3,o4);
+            printf("The solution is: %d",iresult);
+            saveIntegerHistory("LCM", o3, o4,iresult);
             break;
 
         case 12:
-            printf("The solution is: %.2f",sine(o1));
+            result=sine(o1);
+            printf("The solution is: %.2f",result);
+            saveSingleHistory("sin", o1, result);
             break;
 
         case 13:
+            result=cosine(o1);
             printf("The solution is: %.2f",cosine(o1));
+            saveSingleHistory("cos", o1, result);
             break;
 
         case 14:
+            result=tangent(o1);
             printf("The solution is: %.2f",tangent(o1));
+            saveSingleHistory("tan", o1, result);
             break;
+
+        case 15:
+            result=logarithm(o1);
+            printf("The solution is: %.2f",logarithm(o1));
+            saveSingleHistory("ln", o1, result);
+            break;
+        
+        case 16:
+            result=logarithm10(o1);
+            printf("The solution is: %.2f",logarithm10(o1));
+            saveSingleHistory("log10", o1, result);
+            break;
+
+        case 17:
+            displayHistory();
+            break;
+
+        case 18:
+            clearHistory();
+            break;
+
+        case 19:
+            return 0;
 
         default:
             printf("Invalid choice!");
@@ -182,23 +246,23 @@ float absolute(float a){
     return fabs(a);
 }
 float factorial(float a){
-    if (a<0)
+    if (a < 0)
     {
         printf("Factorial of a negative number is invalid!\n");
         return 0;
     }
 
-    if (a != (int)a) 
+    if (a != (int)a)
     {
         printf("Factorial is only valid for whole numbers!\n");
         return 0;
     }
 
-    float sol=1;
+    float sol = 1;
 
-    for (float i = 1; i <=a; i++)
+    for (float i = 1; i <= a; i++)
     {
-        sol=sol*i;
+        sol = sol * i;
     }
 
     return sol;
@@ -213,6 +277,10 @@ int gcd(int a, int b){
     return a;
 }
 int lcm(int a, int b) {
+    if (a == 0 || b == 0)
+    {
+        return 0;
+    }
     return (a * b) / gcd(a, b);
 }
 float sine(float angle) {
@@ -225,4 +293,93 @@ float cosine(float angle) {
 
 float tangent(float angle) {
     return tan((angle * PI) / 180);
+}
+float logarithm(float a) {
+    if (a <= 0) 
+    {
+        printf("Logarithm is only defined for positive numbers!\n");
+        return 0;
+    }
+    return log(a);
+}
+float logarithm10(float a) {
+    if (a <= 0) 
+    {
+        printf("Logarithm is only defined for positive numbers!\n");
+        return 0;
+    }
+    return log10(a);
+}
+void saveHistory(char operation[], float a, float b, float result) {
+    FILE *file = fopen("history.txt", "a");
+
+    if (file == NULL) {
+        printf("Error opening history file!\n");
+        return;
+    }
+
+    fprintf(file, "%.2f %s %.2f = %.2f\n",a, operation, b, result);
+
+    fclose(file);
+}
+void saveSingleHistory(char operation[], float a, float result){
+    FILE *file = fopen("history.txt", "a");
+
+    if (file == NULL) {
+        printf("Error opening history file!\n");
+        return;
+    }
+
+    if (operation[0] == '!')
+    {
+        fprintf(file, "%.2f! = %.2f\n", a, result);
+    }
+    else
+    {
+        fprintf(file, "%s(%.2f) = %.2f\n", operation, a, result);
+    }
+
+    fclose(file);
+}
+void saveIntegerHistory(char operation[], int a, int b, int result){
+    FILE *file = fopen("history.txt", "a");
+
+    if (file == NULL) {
+        printf("Error opening history file!\n");
+        return;
+    }
+
+    fprintf(file, "%s(%d,%d) = %d\n", operation, a,b, result);
+
+    fclose(file);
+}
+void displayHistory() {
+    FILE *file = fopen("history.txt", "r");
+
+    if (file == NULL) {
+        printf("No history found!\n");
+        return;
+    }
+
+    char line[200];
+
+    printf("\n===== CALCULATION HISTORY =====\n");
+
+    while (fgets(line, sizeof(line), file) != NULL) {
+        printf("%s", line);
+    }
+
+    fclose(file);
+}
+void clearHistory() {
+    FILE *file = fopen("history.txt", "w");
+
+    if (file == NULL) {
+        printf("Error clearing history!\n");
+        return;
+    }
+
+    fclose(file);
+
+    printf("History cleared successfully!\n");
 }
