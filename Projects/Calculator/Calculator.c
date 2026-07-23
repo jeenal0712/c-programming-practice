@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#define PI 3.14159265358979323846
 float add(float a,float b);
 float subtract(float a,float b);
 float multiply(float a,float b);
@@ -11,6 +12,9 @@ float absolute(float a);
 float factorial(float a);
 int gcd(int a, int b);
 int lcm(int a, int b);
+float sine(float a);
+float cosine(float a);
+float tangent(float a);
 int main(){
     int choice;
     while(1)
@@ -27,7 +31,10 @@ int main(){
         printf("9. Factorial\n");
         printf("10. GCD\n");
         printf("11. LCM\n");
-        printf("12. Exit\n");
+        printf("12. Sin()\n");
+        printf("13. Cos()\n");
+        printf("14. Tan()\n");
+        printf("15. Exit\n");
 
         printf("Enter your choice:");
         scanf("%d",&choice);
@@ -37,18 +44,18 @@ int main(){
         int o3;
         int o4;
 
-        if (choice == 12) 
+        if (choice == 15) 
         {
             return 0;
         }
 
-        if (choice < 1 || choice > 12) 
+        if (choice < 1 || choice > 15) 
         {
             printf("Invalid choice!\n");
             continue;
         }
 
-        if (choice!=7 && choice!=8 && choice!=9 && choice!=10 && choice!=11)
+        if (choice!=7 && choice!=8 && choice!=9 && choice!=10 && choice!=11 && choice!=12 && choice!=13 && choice!=14)
         {
             printf("Enter the first operand:");
             scanf("%f",&o1);
@@ -56,7 +63,7 @@ int main(){
             scanf("%f",&o2);
         }
 
-        if (choice==7 || choice==8 || choice==9)
+        if (choice==7 || choice==8 || choice==9 || choice==12 || choice==13 || choice==14)
         {
             printf("Enter the operand:");
             scanf("%f",&o1);
@@ -114,6 +121,18 @@ int main(){
 
         case 11:
             printf("The solution is: %d",lcm(o3,o4));
+            break;
+
+        case 12:
+            printf("The solution is: %.2f",sine(o1));
+            break;
+
+        case 13:
+            printf("The solution is: %.2f",cosine(o1));
+            break;
+
+        case 14:
+            printf("The solution is: %.2f",tangent(o1));
             break;
 
         default:
@@ -195,4 +214,15 @@ int gcd(int a, int b){
 }
 int lcm(int a, int b) {
     return (a * b) / gcd(a, b);
+}
+float sine(float angle) {
+    return sin((angle * PI) / 180);
+}
+
+float cosine(float angle) {
+    return cos((angle * PI) / 180);
+}
+
+float tangent(float angle) {
+    return tan((angle * PI) / 180);
 }
