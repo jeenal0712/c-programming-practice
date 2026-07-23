@@ -20,13 +20,13 @@ A menu-driven calculator program written in C that performs basic arithmetic, ad
 ## 📸 Screenshots
 
 ### 🏠 Main Menu
-![Calculator Main Menu](screenshots/main_menu.png)
+![Calculator Main Menu](Screenshots/main_menu.png)
 
 ### 🧮 Calculation Output
-![Calculator Output](screenshots/output.png)
+![Calculator Output](Screenshots/output.png)
 
 ### 📜 Calculation History
-![Calculation History](screenshots/history.png)
+![Calculation History](Screenshots/history.png)
 
 ## 🛠️ Technologies Used
 
@@ -39,25 +39,19 @@ A menu-driven calculator program written in C that performs basic arithmetic, ad
 ### 1. Clone the repository
 
 ```bash
-
 git clone https://github.com/jeenal0712/c-programming-practice.git
-
 ```
 
 ### 2. Navigate to the project directory
 
 ```
-
 cd calculator
-
 ```
 
 ### 3. Compile the program
 
 ```
-
 gcc calculator.c -o calculator -lm
-
 ```
 
 ### 4. Run the program
