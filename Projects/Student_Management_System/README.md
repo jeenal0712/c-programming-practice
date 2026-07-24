@@ -18,6 +18,23 @@ This project allows users to manage student records using structures, functions,
 - ⬆️ Sort in ascending or descending order
 - 💾 Store records using binary file handling
 
+## 📸 Screenshots
+
+### 🏠 Main Menu
+![Student Management System Main Menu](./Screenshots/main_menu.png)
+
+### ➕ Add Student
+![Add Student](./Screenshots/add_student.png)
+
+### 🔍 Search Student
+![Search Student](./Screenshots/search_student.png)
+
+### 🔃 Sort Students
+![Sort Students](./Screenshots/sort_students.png)
+
+### 📋 Display Students
+![Display Students](./Screenshots/display_students.png)
+
 ## 🛠️ Concepts Used
 
 - Structures
