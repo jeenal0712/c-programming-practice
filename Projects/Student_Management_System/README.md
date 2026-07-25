@@ -30,10 +30,10 @@ This project allows users to manage student records using structures, functions,
 ![Search Student](./Screenshots/search_student.png)
 
 ### 🔃 Sort Students
-![Sort Students](./Screenshots/sort_students.png)
+![Sort Students](./Screenshots/sort_student.png)
 
 ### 📋 Display Students
-![Display Students](./Screenshots/display_students.png)
+![Display Students](./Screenshots/display_student.png)
 
 ## 🛠️ Concepts Used
 
