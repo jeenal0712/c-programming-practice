@@ -75,6 +75,7 @@ void displayBoard(char board[3][3]) {
 }
 void makeMove(char board[3][3], char player){
     int p;
+    printf("\n%c's turn\n", player);
     printf("Enter the position:");
     scanf("%d",&p);
 
