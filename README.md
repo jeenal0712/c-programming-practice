@@ -77,59 +77,70 @@ A console-based two-player Tic Tac Toe game built using C.
 
 ## 📂 Repository Structure
 
-```
+## 📂 Repository Structure
 
-c-programming-practice
+```text
+c-programming-practice/
 │
-├── 📁 c-practice
+├── 📁 c-practice/
 │   │
-│   ├── 📁 2D_Arrays
+│   ├── 📁 2D_Arrays/
 │   │   └── Matrix & 2D Array Problems
 │   │
-│   ├── 📁 Arrays
+│   ├── 📁 Arrays/
 │   │   └── 1D Array Programs
 │   │
-│   ├── 📁 Dynamic_Memory_Allocation
+│   ├── 📁 Dynamic_Memory_Allocation/
 │   │   └── malloc(), calloc(), realloc() & free() Programs
 │   │
-│   ├── 📁 For_Loop
+│   ├── 📁 For_Loop/
 │   │   └── Basic to Advanced Loop Programs
 │   │
-│   ├── 📁 Function_And_Pointers
+│   ├── 📁 Function_And_Pointers/
 │   │   └── Functions and Pointer Programs
 │   │
-│   ├── 📁 If_Else
+│   ├── 📁 If_Else/
 │   │   └── Conditional Statement Programs
 │   │
-│   ├── 📁 Pattern_Printing
+│   ├── 📁 Pattern_Printing/
 │   │   └── Star, Number & Character Patterns
 │   │
-│   ├── 📁 Questions_Regarding_Loops
+│   ├── 📁 Questions_Regarding_Loops/
 │   │   └── Logic Building Problems
 │   │
-│   ├── 📁 Recursion
+│   ├── 📁 Recursion/
 │   │   └── Recursive Programming Problems
 │   │
-│   ├── 📁 Sorting_Algorithms
+│   ├── 📁 Sorting_Algorithms/
 │   │   └── Bubble, Selection, Insertion Sort
 │   │
-│   ├── 📁 Strings
+│   ├── 📁 Strings/
 │   │   └── String Manipulation Programs
 │   │
-│   ├── 📁 Structures
+│   ├── 📁 Structures/
 │   │   └── Structure and Union Programs
 │   │
-│   ├── 📁 Switch_Case
+│   ├── 📁 Switch_Case/
 │   │   └── Menu-Driven & Switch Case Programs
 │   │
-│   └── 📁 While_Loop
+│   └── 📁 While_Loop/
 │       └── While Loop Practice Programs
 │
-└── 📁 Projects
+└── 📁 Projects/
     │
-    └── 📁 Student_Management_System
-        ├── Student_Management.c
-        └── README.md
+    ├── 📁 Calculator/
+    │   ├── 📁 Screenshots/
+    │   ├── Calculator.c
+    │   └── README.md
+    │
+    ├── 📁 Student_Management_System/
+    │   ├── 📁 Screenshots/
+    │   ├── README.md
+    │   └── Student_Management.c
+    └── 📁 Tic_Tac_Toe/
+        ├── 📁 Screenshots/
+        ├── README.md
+        └── Tic_Tac_Toe.c
 
 ```
 
