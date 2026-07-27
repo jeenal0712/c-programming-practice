@@ -11,7 +11,7 @@ My goal is to build a strong foundation in C programming by practicing different
 ## 📊 Stats
 - 14 topics covered
 - 100+ programs written
-- 1 project built
+- 3 project built
 - Actively maintained
 
 ## 📚 Topics Covered
@@ -47,6 +47,33 @@ A console-based Student Management System built using C.
 - CRUD Operations
 
 👉 [View Project](./Projects/Student_Management_System)
+
+### 🧮 Calculator
+
+A feature-rich command-line calculator built using C.
+
+**Concepts Used:**
+
+- Functions
+- `math.h`
+- File Handling
+- Loops
+- Conditional Statements
+
+👉 [View Project](./Projects/Calculator)
+
+### 🎮 Tic Tac Toe
+
+A console-based two-player Tic Tac Toe game built using C.
+
+**Concepts Used:**
+
+- 2D Arrays
+- Functions
+- Loops
+- Conditional Statements
+
+👉 [View Project](./Projects/Tic_Tac_Toe)
 
 ## 📂 Repository Structure
 
