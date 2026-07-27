@@ -11,7 +11,7 @@ My goal is to build a strong foundation in C programming by practicing different
 ## 📊 Stats
 - 14 topics covered
 - 100+ programs written
-- 3 project built
+- 3 projects built
 - Actively maintained
 
 ## 📚 Topics Covered
