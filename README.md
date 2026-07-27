@@ -77,8 +77,6 @@ A console-based two-player Tic Tac Toe game built using C.
 
 ## 📂 Repository Structure
 
-## 📂 Repository Structure
-
 ```text
 c-programming-practice/
 │
@@ -137,6 +135,7 @@ c-programming-practice/
     │   ├── 📁 Screenshots/
     │   ├── README.md
     │   └── Student_Management.c
+    │
     └── 📁 Tic_Tac_Toe/
         ├── 📁 Screenshots/
         ├── README.md
